@@ -4,8 +4,8 @@
   </a>
 </p>
 
-<h1 align="center">Welcome to Jema.ai</h1>
-<h2 align="center">Open source Jasper alternative.</h2>
+<h1 align="center">Welcome to Jema.ai x Skylight AI ✨</h1>
+<h2 align="center">Open source Jasper alternative, and now with Skylight Auth + Monetization.</h2>
 <p align="center">
   <a href="https://opensource.org/licenses/MIT" target="_blank">
     <img alt="License: MIT License" src="https://img.shields.io/badge/License-MIT License-yellow.svg" />
