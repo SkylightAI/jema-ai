@@ -78,7 +78,7 @@ const InputOutputComponent = ({ template, user, membership, product, plan }) => 
         Please suggest 3 outputs. number them 1,2,3` },
     ];
     try{
-        const [ response ] = await window.ai.generateText(
+        const [ response ] = await (window as any).ai.generateText(
             {
                 messages,
             },)
