@@ -28,8 +28,11 @@ export const authOptions: NextAuthOptions = {
     },
   ],
   callbacks: {
+    
     async session({ session, user, token }) {
+      //@ts-ignore
       session.user.id = token.id as string;
+      //@ts-ignore
       session.accessToken = token.accessToken as string;
       return session;
     },
