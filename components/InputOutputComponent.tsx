@@ -4,7 +4,7 @@ import OutputComponent from "./OutputComponent";
 import { Template } from "../constants/templates";
 import {TemplateInput} from "../constants/templates";
 import toast, { Toaster } from 'react-hot-toast';
-import { signIn, signOut } from "next-auth/react";
+import { signIn, } from "next-auth/react";
 // import Link from 'next/link';
 type InputsData = {
     [key: string]: string;
