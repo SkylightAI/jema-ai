@@ -36,8 +36,8 @@ type ProductGatedProps =
       plan: null;
     }
   | {
-    user: User | null;
-      membership: undefined;
+    user?: User | null;
+      membership?: undefined;
       product: Product;
       plan: Plan;
     };
