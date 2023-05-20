@@ -1,4 +1,4 @@
-import React, {Fragment, useState} from 'react';
+import React, { useState} from 'react';
 import {useRouter} from "next/router";
 import Image from "next/image";
 import Github from "./GitHub";
@@ -21,9 +21,9 @@ const Sidebar: React.FC<Props> = ({items, onShowPopup}) => {
     const handleClick = () => {
         router.push('/');
     };
-    const isActive = (url: string): boolean => {
-        return router.pathname === url;
-    };
+    // const isActive = (url: string): boolean => {
+    //     return router.pathname === url;
+    // };
     const toggleSidebar = () => {
         setIsOpen(!isOpen);
     };
