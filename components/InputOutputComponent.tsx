@@ -48,7 +48,7 @@ const InputOutputComponent = ({ template, user, membership, product, plan }) => 
     }
 
     // if the window object does not have the property .ai then the extension is not installed
-    if(!window.ai){
+    if(!(window as any).ai){
         toast.custom(
             <div className="bg-indigo-800 p-5 rounded-xl shadow-lg flex flex-col items-center space-y-4 transition-all duration-300 ease-in-out hover:shadow-xl">
               <p className="text-lg font-semibold text-indigo-200">
