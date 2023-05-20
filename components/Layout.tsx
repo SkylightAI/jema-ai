@@ -16,16 +16,6 @@ export const SIDEBAR_ITEMS: any = [
         url: "https://github.com/yuvalsuede/jasper-alternative-gpt",
         target: "blank"
     },
-    {
-        label: "Follow me on LinkedIn",
-        url: "https://www.linkedin.com/in/yuval-suede/",
-        target: "blank"
-    },
-    {
-        label: "Contact",
-        url: "https://www.linkedin.com/in/yuval-suede/",
-        target: "blank"
-    },
 ];
 
 

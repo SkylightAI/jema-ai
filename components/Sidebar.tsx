@@ -51,53 +51,47 @@ const Sidebar: React.FC<Props> = ({items, onShowPopup}) => {
                         <h1 className="text-lg font-normal text-gray-700 text-center">Open Source </h1>
                         <h1 className="text-lg font-semibold text-gray-700  text-center">Jasper <i
                             className="fas fa-arrow-right text-primary"/> alternative</h1>
-
-
                     </div>
                 </div>
 
                 <nav className="flex-1">
-                    <ul className="py-4">
+                    <ul className="py-2">
                         <li className="mb-10">
                             <div className="flex flex-row align-middle justify-center">
                                 <a
-                                    className="flex max-w-fit items-center justify-center space-x-2 rounded-full border border-gray-300 bg-white px-4 py-2 text-sm text-gray-600 shadow-md transition-colors hover:bg-gray-100 mt-5 animate-wobble"
+                                    className="flex max-w-fit items-center justify-center space-x-2 rounded-full border border-gray-300 bg-white px-4 py-2 text-sm text-gray-600 shadow-md transition-colors hover:bg-gray-100"
                                     href="https://github.com/yuvalsuede/jasper-alternative-gpt"
                                     target="_blank"
                                     rel="noopener noreferrer"
                                 >
                                     <Github/>
-                                    <p>Star on Github</p>
+                                    <p>Star the Jema.ai Repo</p>
+                                </a>
+                            </div>
+                            <div className="flex mt-1 flex-row align-middle justify-center">
+                                <a
+                                    className="flex max-w-fit items-center justify-center space-x-2 rounded-full border border-gray-300 bg-white px-4 py-2 text-sm text-gray-600 shadow-md transition-colors hover:bg-gray-100"
+                                    href="https://windowai.io"
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                >
+                                    <p>Powered by window.ai 🪟</p>
+                                </a>
+                            </div>
+                            <div className="flex mt-1 flex-row align-middle justify-center">
+                                <a
+                                    className="flex max-w-fit items-center justify-center space-x-2 rounded-full border border-gray-300 bg-white px-4 py-2 text-sm text-gray-600 shadow-md transition-colors hover:bg-gray-100"
+                                    href="https://skylightai.io"
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                >
+                                    <p>Fork the monetized repo ✨</p>
                                 </a>
                             </div>
                         </li>
-                        {items.map((item, index) => (
-                            <Fragment key={index}>
-                                <li className="mb-2 ml-8">
-                                    <a
-                                        target={item?.target === 'blank' ? '_blank' : ''}
-                                        href={item.url}
-                                        className={`text-gray-500 hover:text-gray-700 transition duration-300 ${
-                                            isActive(item.url) ? 'text-primary' : ''
-                                        }`}>
-                                        {item.label}
-                                    </a>
-                                </li>
-                            </Fragment>
-                        ))}
-
-                        <li>
-                            <div className="w-full flex align-middle justify-center mt-5">
-                                <button
-                                    className="w-2/3 bg-gradient-to-r from-green-400 to-blue-500 text-white px-6 py-2 rounded-full font-semibold text-xs shadow-md"
-                                    onClick={onShowPopup}
-                                >
-                                    Go Pro
-                                </button>
-                            </div>
-                        </li>
-
+                        
                     </ul>
+                    
 
                 </nav>
 

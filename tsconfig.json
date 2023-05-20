@@ -14,7 +14,15 @@
         "isolatedModules": true,
         "noUnusedLocals": true,
         "jsx": "preserve",
-        "incremental": true
+        "incremental": true,
+        "paths": {
+            "@/lib/*": [
+              "./lib/*"
+            ],
+            "@/types/*": [
+              "./types/*"
+            ]
+          },
     },
     "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx"],
     "exclude": ["node_modules"]
