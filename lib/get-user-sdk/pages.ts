@@ -14,6 +14,7 @@ const getSdk = async (
   const session = await unstable_getServerSession(req, res, authOptions);
   if (!session) return {};
   return {
+    // @ts-ignore
     sdk: new WhopSDK({ TOKEN: session.accessToken }).userOAuth,
     user: session.user,
   };
