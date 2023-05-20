@@ -1,5 +1,5 @@
 import type { UserOAuthService } from "@whop-sdk/core/node/services/UserOAuthService";
-import { cache } from "react";
+// import { cache } from "react";
 
 /**
  * helper to check if a user owns a certain product,
