@@ -26,6 +26,9 @@ export type UserProps = {
 type ProductGatedProps =
 | {
     user: User | null;
+    membership: null;
+    product: null;
+    plan: null;
 } | {
       user: User;
       membership: Membership;
