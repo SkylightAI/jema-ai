@@ -23,24 +23,7 @@ const RECOMMENDED_PLAN = process.env.NEXT_PUBLIC_RECOMMENDED_PLAN_ID || "";
 export type UserProps = {
   user: User | null;
 };
-type ProductGatedProps =
-| {
-    user: User;
-    membership: null;
-    product: null;
-    plan: null;
-} | {
-      user: User;
-      membership: Membership;
-      product: null;
-      plan: null;
-    }
-  | {
-    user?: User | null;
-      membership?: undefined;
-      product: Product;
-      plan: Plan;
-    };
+
 
 const TemplatePage: NextPage<ProductGatedProps> = ({ user, membership, product, plan }) => {
     const router = useRouter();
@@ -69,6 +52,12 @@ const TemplatePage: NextPage<ProductGatedProps> = ({ user, membership, product, 
 
 export default TemplatePage;
 
+type ProductGatedProps = {
+    user: User | null;
+    membership: Membership | null;
+    product: Product | null;
+    plan: Plan | null;
+};
 
 export const getServerSideProps: GetServerSideProps<
   ProductGatedProps
@@ -79,6 +68,9 @@ export const getServerSideProps: GetServerSideProps<
     return {
         props: {
             user: user || null,
+            membership: null,
+            product: null,
+            plan: null,
             },
     };
   const membership = await findProduct(sdk, ALLOWED_PRODUCT);
